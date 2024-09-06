@@ -1,5 +1,5 @@
 header{
-    background-color: rgb(113, 104, 122); height: 5rem;
+    background-color: rgb(157, 128, 186); height: 5rem;
     border-style: dotted;
     border-color: rgb(100, 71, 100);
     border-width: 5px;
@@ -7,7 +7,7 @@ header{
 }
 
 body{
-    background-color: rgb(41, 140, 75);
+    background-image:url(japan2.jpg);
     font-size: 20px;
 }
 
@@ -30,7 +30,7 @@ div{
 
 
 footer{
-    background-color: rgb(111, 89, 132); height: 7rem;
+    background-color: rgb(157, 128, 186); height: 7rem;
     text-align: center;
     border-style: dotted;
     border-color: rgb(71, 32, 69);
@@ -46,6 +46,4 @@ nav{
     
 }
 
-img{
-    padding-left: 40%;
-}
+
