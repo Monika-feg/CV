@@ -1,23 +1,24 @@
 header{
-    background-color: rgb(108, 62, 151); height: 5rem;
+    background-color: rgb(113, 104, 122); height: 5rem;
     border-style: dotted;
-    border-color: rgb(255, 0, 251);
+    border-color: rgb(100, 71, 100);
     border-width: 5px;
     
 }
 
 body{
-    background-color: rgb(25, 131, 62);
+    background-color: rgb(41, 140, 75);
     font-size: 20px;
 }
 
 h1{
    
     text-align: center;
+    color: aliceblue;
     
   font-family: 'Tangerine', serif;
   font-size: 48px;
-  text-shadow: 4px 4px 4px #aaa;
+  text-shadow: 4px 4px 4px #050505;
     
     
 }
@@ -29,17 +30,17 @@ div{
 
 
 footer{
-    background-color: rgb(108, 62, 151); height: 5rem;
+    background-color: rgb(111, 89, 132); height: 5rem;
     text-align: center;
     border-style: dotted;
-    border-color: rgb(255, 0, 251);
+    border-color: rgb(71, 32, 69);
     border-width: 5px;
 
 }
 
 nav{
     text-align: center;
-    background-color: aliceblue;
+    
     
     
     
