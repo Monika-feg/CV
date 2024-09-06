@@ -1,3 +1,13 @@
+.contakt{
+    display: flex;
+   
+    flex-direction: column ;
+    
+}
+.contakt > *{
+    flex-shrink: 1;
+}
+
 header{
     background-color: rgb(157, 128, 186); height: 5rem;
     border-style: dotted;
