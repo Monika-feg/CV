@@ -9,7 +9,7 @@
 }
 
 header{
-    background-color: rgb(157, 128, 186); height: 5rem;
+    background-color: rgb(157, 128, 186); height: 7rem;
     border-style: dotted;
     border-color: rgb(100, 71, 100);
     border-width: 5px;
@@ -40,7 +40,7 @@ div{
 
 
 footer{
-    background-color: rgb(157, 128, 186); height: 7rem;
+    background-color: rgb(157, 128, 186); height: 9rem;
     text-align: center;
     border-style: dotted;
     border-color: rgb(71, 32, 69);
