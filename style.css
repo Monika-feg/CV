@@ -1,0 +1,132 @@
+.contakt{
+    display: flex;
+   
+    flex-direction: column ;
+    
+}
+.contakt > *{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+header{
+    background-color: rgb(157, 128, 186); height: 7rem;
+    height: 10rem;
+    border-style: hidden;
+    border-color: rgb(9, 9, 9);
+    border-width: 5px;
+    
+
+}
+
+header p{
+  color: aliceblue ; 
+  text-align: center; 
+}
+
+p{
+    color: rgb(246, 245, 245);
+}
+
+body{
+    background-image:url(img/japan2.jpg);
+    font-size: 20px;
+}
+
+h1{
+   
+    text-align: center;
+    color: aliceblue;
+    
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #050505; 
+    
+}
+
+h2{
+    text-align: center;
+    color: azure;
+}
+
+ul{
+    color: aliceblue;
+}
+
+div{
+    padding-left: 1rem;
+}
+
+
+
+footer{
+    background-color: rgb(157, 128, 186); height: 15rem;
+    text-align: center;
+    height: 12rem;
+    border-style: hidden;
+    border-color: rgb(9, 9, 9);
+    border-width: 5px;
+}
+
+footer p{
+    color: aliceblue ; 
+   text-align: center; 
+}
+
+nav{
+    text-align: center;
+    
+    
+    
+    
+}
+
+a{
+    color: antiquewhite;
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.aabme{
+    color: #006400;
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(246, 162, 227);
+    border-radius: 8px; 
+}
+
+ul#repoList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  ul#repoList li {
+    display: inline-block;
+    margin: 10px 20px;
+  }
+  
+  /* Styling för länkar */
+  ul#repoList a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #f5f1f1;
+    border: 2px solid  rgb(157, 128, 186);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover-effekt */
+  ul#repoList a:hover {
+    background-color: rgb(246, 162, 227);
+    color: white;
+  }
+
+

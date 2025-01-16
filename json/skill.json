@@ -1,0 +1,36 @@
+{
+    "mywork":[
+        {
+           "work": "Dometic AB",
+            "title": "Operatör",
+            "description": "Ljuter husvagns- och husbilsfönster",
+            "year":"2017-01-02 - "
+          },
+          {
+            "work": "Villa vita",
+             "title": "Behandlings assistent",
+             "description": "Tog hand om klienternas vardag och hade ibland även några samtal",
+             "year":"sommaren 2016 "
+           },
+          {
+            "work": "Kriminalvården",
+            "title": "Kriminalvårdare",
+            "description": "Upprätthålla säkerhet, övervaka intagna och stödja deras rehabilitering",
+            "year":"2011-01-02 - 2016 -05-"
+          },
+          {
+            "work": "kyrkekvarn islandshästar turridning",
+            "title": "Turridningsledare",
+            "description": "Tog hand om turister från när och fjärran på olika turer på islandshästar",
+            "year":" sommaren 2009"
+          },
+          {
+            "work": "Biltema",
+            "title": "Varuutplockare",
+            "description": "Plockade upp varor när Biltema öppnade i Skövde",
+            "year":" sommaren 2008"
+          }
+
+          
+    ]
+}
