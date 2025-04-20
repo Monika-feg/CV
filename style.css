@@ -3,6 +3,7 @@
 *::after {
     box-sizing: border-box; /* Gör så att padding och border inte räknas utanför elementets bredd */
 }
+
 body {
     background-image: url('img/Japan-Himeji-Castle-1.jpg');
     background-size: cover;
@@ -10,7 +11,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-size: 20px;
-    margin-left: 220px;
+    margin-left: 15vW;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,8 +19,8 @@ body {
 }
 
 .menu {
-    width: 15vw;
-    position: fixed;
+    width: 200px;
+    position: fixed; /* Gör menyn fast på sidan */
     left: 0;
     top: 0;
     height: 100vh;
@@ -35,9 +36,11 @@ body {
     align-items: flex-start;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-  }
-  
-  .menu a {
+    transition: all 0.3s ease; /* Lägg till en smidig övergång */
+    overflow-y: auto; /* Lägg till scrollning om innehållet är för stort */
+}
+
+.menu a {
     display: block;
     color: #333;
     text-decoration: none;
@@ -47,16 +50,35 @@ body {
     padding: 0.4rem 0.5rem;
     border-radius: 8px;
     transition: all 0.3s ease;
-  }
-  
-  .menu a:hover {
+    text-align: left; /* Justera texten till vänster */
+    width: 100%; /* Säkerställ att länkarna fyller menyns bredd */
+    word-wrap: break-word; /* Hantera långa ord */
+}
+
+.menu a:hover {
     color: white;
     background-color: rgb(246, 162, 227);
     transform: translateX(5px);
-  }
+}
 
-  
-  
+/* Mobilanpassning */
+@media (max-width: 768px) {
+    .menu {
+        height: auto; /* Anpassa höjden efter innehållet */
+        position: relative; /* Gör menyn inte fast */
+        padding: 1rem;
+        border-radius: 0; /* Ta bort rundade hörn */
+        box-shadow: none; /* Ta bort skuggan */
+        z-index: auto; /* Ta bort prioritet i lager */
+        text-align: center; /* Centrera texten i menyn */
+    }
+
+    .menu a {
+        font-size: 14px; /* Minska textstorleken */
+        padding: 0.5rem;
+        text-align: center; /* Centrera länkarna */
+    }
+}
 
 /* Header */
 header {
@@ -229,7 +251,7 @@ footer p {
 .list-container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     max-width: 90%;
     margin: 2rem auto;
@@ -238,15 +260,16 @@ footer p {
 .list-container .jsonList {
     flex: 1 1 400px;
     box-sizing: border-box;
+    margin: 0.5rem;
 }
 
 .jsonList {
     background-color: rgba(255, 255, 255, 0.95);
     color: #2c2c2c;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 15px;
-    margin: 2rem auto;
-    max-width: 850px;
+    margin: 1rem auto;
+    max-width: 600px;
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -266,7 +289,7 @@ footer p {
 /* Rubriker i listan */
 .jsonList strong {
     display: block;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 0.3rem;
     color: #5c3a4d;
 }
@@ -277,7 +300,6 @@ footer p {
     color: #7a7a7a;
 }
 
-
 /* Allmänt spacing */
 div {
     padding-left: 1rem;
@@ -287,55 +309,97 @@ div {
 @media (max-width: 768px) {
     body {
         font-size: 16px;
-        padding: 0;
+        padding-left: 120px; /* Mindre padding för att matcha den smalare menyn */
+    }
+
+    .menu {
+        width: 110px; /* Smalare meny för mobil */
+        position: fixed; /* Behåll fixed position även på mobil */
+        padding: 1rem 0.8rem;
+        height: 100vh; /* Behåll full höjd */
+        border-radius: 15px 15px 0 0; /* Behåll rundade hörn uppe, ta bort nere */
+    }
+
+    .menu a {
+        font-size: 14px; /* Minska textstorleken */
+        padding: 0.4rem 0.3rem;
+        margin: 0.6rem 0;
+        text-align: left; /* Behåll vänsterjustering */
     }
 
     header, footer {
-        height: auto;
-        padding: 1.5rem 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .list-container {
+        display: block !important;
+        flex-direction: unset !important;
+        flex-wrap: unset !important;
+    }
+    
+    .list-container .jsonList {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+        display: block !important;
+        float: none !important;
+        margin: 1rem auto !important;
+    }
+
+    .jsonList {
+        padding: 1rem;
+        font-size: 14px;
+        clear: both;
     }
 
     .profilbild {
-        width: 180px;
-        height: 180px;
-    }
-
-    .contact-section,
-    .jsonList,
-    ul#repoList a {
-        width: 90%;
-        max-width: 95%;
-        margin: 1rem auto;
-        font-size: 16px;
-    }
-
-    ul#repoList li {
-        display: block;
+        width: 150px;
+        height: 150px;
         margin: 1rem auto;
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    .contact-section {
+        width: 100%;
+        padding: 1rem;
     }
 
     .aabme {
-        display: block;
-        width: fit-content;
-        margin: 1rem auto;
-        font-size: 14px;
-        padding: 8px 16px;
+        font-size: 12px;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* För ännu mindre skärmar */
+@media (max-width: 480px) {
+    body {
+        padding-left: 85px; /* Ännu mindre padding för att matcha den ännu smalare menyn */
     }
 
-    .contact-list {
-        text-align: left;
-        font-size: 14px;
+    .menu {
+        width: 75px; /* Ännu smalare meny för mycket små skärmar */
+        padding: 1rem 0.5rem;
     }
 
-    .contact-list li {
-        margin: 0.5rem 0;
+    .menu a {
+        font-size: 12px;
+        padding: 0.3rem 0.2rem;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    
+    .profilbild {
+        width: 120px;
+        height: 120px;
     }
 }
