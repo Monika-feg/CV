@@ -1,0 +1,13 @@
+{
+    "skill" : [
+  
+      {
+        "name": "Arbeta i grupp",
+        "description": "Jag är bra på att arbeta i grupp och samarbeta med andra. Jag tycker om att dela med mig av mina kunskaper och lära mig av andra."
+      },
+      {
+        "name": "Problem lösning",
+        "description":"Tycker det är kul med problemlösning, men det är extra kul när man löst problemet. Har inte problem med att fråga om hjälp om det skulle behövas"
+      }
+    ]
+  }
