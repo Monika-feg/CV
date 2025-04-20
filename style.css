@@ -1,132 +1,334 @@
-.contakt{
-    display: flex;
-   
-    flex-direction: column ;
-    
-}
-.contakt > *{
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
-}
-
-header{
-    background-color: rgb(157, 128, 186); height: 7rem;
-    height: 10rem;
-    border-style: hidden;
-    border-color: rgb(9, 9, 9);
-    border-width: 5px;
-    
-
-}
-
-header p{
-  color: aliceblue ; 
-  text-align: center; 
-}
-
-p{
-    color: rgb(246, 245, 245);
-}
-
-body{
-    background-image:url(img/japan2.jpg);
+/* Layout och struktur */
+body {
+    background-image: url('img/Japan-Himeji-Castle-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-size: 20px;
+    margin-left: 220px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1{
-   
+.menu {
+    width: 240px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(233, 195, 230, 0.95);
+    padding: 2rem 1.5rem;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 0.8rem 0;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0.4rem 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: white;
+    background-color: rgb(246, 162, 227);
+    transform: translateX(5px);
+  }
+  
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 10rem;
+    padding: 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+header p {
+    color: #222;
     text-align: center;
-    color: aliceblue;
-    
-  font-family: 'Tangerine', serif;
-  font-size: 48px;
-  text-shadow: 4px 4px 4px #050505; 
-    
 }
 
-h2{
+/* Rubriker */
+h1 {
     text-align: center;
-    color: azure;
+    color: #2c2c2c;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6);
 }
 
-ul{
-    color: aliceblue;
-}
-
-div{
-    padding-left: 1rem;
-}
-
-
-
-footer{
-    background-color: rgb(157, 128, 186); height: 15rem;
+h2 {
     text-align: center;
-    height: 12rem;
-    border-style: hidden;
-    border-color: rgb(9, 9, 9);
-    border-width: 5px;
+    color: #333;
 }
 
-footer p{
-    color: aliceblue ; 
-   text-align: center; 
-}
-
-nav{
+/* Paragrafstil */
+p {
+    color: #222;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+    padding: 0 1rem;
     text-align: center;
-    
-    
-    
-    
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
 }
 
-a{
-    color: antiquewhite;
+/* Navigation */
+nav {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+a {
+    color: #333;
     font-size: 15px;
     display: inline-block;
     padding: 10px;
 }
 
-.aabme{
-    color: #006400;
+/* Speciallänk */
+.aabme {
+    color: #fff;
     font-size: 15px;
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     background-color: rgb(246, 162, 227);
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
+/* Lista med projekt/repo */
 ul#repoList {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
-  }
-  
-  ul#repoList li {
+    max-width: 800px;
+}
+
+ul#repoList li {
     display: inline-block;
     margin: 10px 20px;
-  }
-  
-  /* Styling för länkar */
-  ul#repoList a {
+}
+
+ul#repoList a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
-    color: #f5f1f1;
-    border: 2px solid  rgb(157, 128, 186);
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgb(157, 128, 186);
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  /* Hover-effekt */
-  ul#repoList a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul#repoList a:hover {
     background-color: rgb(246, 162, 227);
     color: white;
-  }
+}
+
+/* Profilbild */
+.profilbild {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid rgb(157, 128, 186);
+    margin: 0 auto;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: auto;
+    padding: 1rem;
+    margin-top: 5rem;
+    text-align: center;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: #333;
+    text-align: center;
+}
+
+/* Kontaktsektion */
+.contakt {
+    display: flex;
+    flex-direction: column;
+}
+
+.contakt > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.contact-section {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-section h2 {
+    color: #222;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #2c2c2c;
+}
+
+.contact-list li {
+    margin: 0.5rem 0;
+}
+
+.contact-list a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* JSONList */
+.list-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+.list-container .jsonList {
+    flex: 1 1 400px;
+    box-sizing: border-box;
+}
+
+.jsonList {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #2c2c2c;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 850px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    border: 1px solid #f1c4d6;
+}
+
+/* Varje punkt */
+.jsonList li {
+    margin-bottom: 2rem;
+    list-style-type: none;
+    padding-left: 0.5rem;
+    border-left: 4px solid #e8a6c0;
+    padding-left: 1rem;
+}
+
+/* Rubriker i listan */
+.jsonList strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #5c3a4d;
+}
+
+/* Datum/år */
+.jsonList time {
+    font-style: italic;
+    color: #7a7a7a;
+}
 
 
+/* Allmänt spacing */
+div {
+    padding-left: 1rem;
+}
+
+/* Mobilanpassning */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    header, footer {
+        height: auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .profilbild {
+        width: 180px;
+        height: 180px;
+    }
+
+    .contact-section,
+    .jsonList,
+    ul#repoList a {
+        width: 90%;
+        max-width: 95%;
+        margin: 1rem auto;
+        font-size: 16px;
+    }
+
+    ul#repoList li {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .aabme {
+        display: block;
+        width: fit-content;
+        margin: 1rem auto;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .contact-list {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .contact-list li {
+        margin: 0.5rem 0;
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "myeducation":[
+        {
+           "name": "JavaUtveckling Capmus Värnamo",
+           "description": "Javautveckling, 2 års utbildning",
+           "year" : "2024- "
+        },
+
+        {
+            "name": "Naturbruksgymnasiet Uddetorp Skara",
+            "description": "Inriktning: Häst och Ridning",
+            "year" : "2005-2008"
+        },
+
+        {
+            "name": "Dometics utvecklingsprogram",
+            "description": "Utvecklingsprogram för att bli en bättre medarbetare och utvecka sig själv, 4 dagars utbildning",
+            "year" : "2021"
+            
+         },
+
+         {
+            "name": "Kaizen-utbildning Dometic",
+            "description": "Kaizen är en japansk term som betyder förändring till det bättre. Det handlar om att ständigt förbättra och utveckla verksamheten, 5 dagars utbildning",
+            "year" : "2020"
+            
+         },
+
+         {
+            "name": "Kriminalvårdens grundutbildning i Göteborg",
+            "description": "Utbildning för att kunna arbeta inom kriminalvården, 20 veckors utbildning",
+            "year" : "2013"
+            
+         }
+    ]
+}
